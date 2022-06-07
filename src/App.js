@@ -13,6 +13,7 @@ const App = () => {
 
   useEffect(() => {
     searchMovies("Batman");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const searchMovies = async (title) => {
