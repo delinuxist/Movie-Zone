@@ -4,7 +4,8 @@ import "./App.css";
 import { SearchIcon } from "@heroicons/react/solid";
 import MovieCard from "./components/MovieCard";
 
-const API_URL = `https://www.omdbapi.com?apikey=16504a87`;
+const key = process.env.REACT_APP_KEY;
+const API_URL = `https://www.omdbapi.com?apikey=${key}`;
 
 const App = () => {
   const [title, setTitle] = useState("");
